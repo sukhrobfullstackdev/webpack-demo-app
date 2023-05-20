@@ -1,0 +1,10 @@
+import {run} from "./app/app";
+import {AlertService} from "./app/utils/alert-service";
+import {ComponentService} from "./app/utils/components-services";
+import "bootstrap";
+import "@popperjs/core";
+import "jquery";
+import "./main.scss";
+const alertService = new AlertService();
+const componentService = new ComponentService();
+run(alertService, componentService);
